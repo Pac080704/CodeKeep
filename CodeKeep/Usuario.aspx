@@ -50,6 +50,9 @@
             <br />
             <br />
         </div>
+        <div class="cerrar">
+            <asp:Button ID="Button3" runat="server" Text="Cerrar Sesión" BackColor="DimGray" ForeColor="White" Height="50px" OnClick="Button3_Click" Width="195px" />
+        </div>
     </form>
     <!--MARGEN INFERIOR-->
     <div class="marginf"></div>

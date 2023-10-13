@@ -7,11 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace CodeKeep
 {
-    public partial class Administracion : System.Web.UI.Page
+    public partial class Consulta : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["cAdmin"] == null ||
+            if (Session["cUsuario"] == null ||
             Session["nombre"] == null)
             {
                 Response.Redirect("InicioSesion.aspx");

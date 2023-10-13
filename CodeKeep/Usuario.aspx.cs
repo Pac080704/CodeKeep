@@ -11,12 +11,26 @@ namespace CodeKeep
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+            if (Session["cUsuario"] == null ||
+            Session["nombre"] == null)
+            {
+                Response.Redirect("InicioSesion.aspx");
+            }
+            else
+            {
+                Label1.Text = "Bienvenid@ "+ Session["nombre"].ToString();
+            }
         }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            
+            Response.Redirect("Consulta.aspx");
+        }
+
+        protected void Button3_Click(object sender, EventArgs e)
+        {
+            Session.Abandon();
+            Response.Redirect("InicioSesion.aspx");
         }
     }
 }

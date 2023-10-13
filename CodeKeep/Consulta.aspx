@@ -1,16 +1,16 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Administracion.aspx.cs" Inherits="CodeKeep.Administracion" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Consulta.aspx.cs" Inherits="CodeKeep.Consulta" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Administración</title>
+    <title>Consulta de información</title>
     <link href="Style.css" rel="stylesheet" type="text/css" />
     <link href="stylemenu.css" rel="stylesheet" type="text/css" />
-
 </head>
 <body>
-    <div  class="margsup">
+    <!--MARGEN SUPERIOR-->
+    <div class="margsup">
         <!--IMAGEN LOGO-->
         <div class="img1"></div>
         <!--ESTO ES PARA EL DROP-DOWN MENÚ-->
@@ -18,7 +18,8 @@
             <div class="menu">
                 <button class="menubtn">MENÚ</button>
                 <div class="contenidomenu">
-                    <a href="HomePage.html">Página de Inicio</a>
+                    <a href="IncioSesion.aspx">Inicio de sesión</a>
+                    <a href="RegistroCuenta.aspx">Registrar cuenta</a>
                 </div>
             </div>
         </div>
@@ -27,7 +28,7 @@
             <div class="ayuda">
                 <button class="ayudabtn">AYUDA</button>
                 <div class="contenidoayuda">
-                    <a href="#">Contacto</a> <!--falta poner las referencias-->
+                    <a>Contacto</a>
                     <a href="#">Tutorial</a>
                 </div>
             </div>
@@ -35,13 +36,9 @@
         <!--TÍTULO-->
         <a class="titu">CodeKeep</a>
     </div>
-    <!--FORM-->
-    <form class="formad" id="form1" runat="server">
-        <div class="adadmin">
-            Hola admin
-        </div>
-        <div class="cerrar">
-            <asp:Button ID="Button1" runat="server" Text="Cerrar Sesión" BackColor="DimGray" ForeColor="White" Height="50px" Width="195px" />
+    <form id="form1" runat="server">
+        <div>
+            perrooooooooooooooooooooooooooooooooo
         </div>
     </form>
     <!--MARGEN INFERIOR-->
