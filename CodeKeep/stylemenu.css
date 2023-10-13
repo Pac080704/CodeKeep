@@ -1,0 +1,151 @@
+﻿/*
+    MENÚ  "MENU"
+*/
+.menu {
+    position: relative;
+    display: inline-block;
+    height: 80px;
+    width: 160px;
+}
+
+.menubtn {
+    position: relative;
+    display: inline-block;
+    height: 80px;
+    width: 160px;
+    background-color: royalblue;
+    color: white;
+    padding: 15px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.contenidomenu {
+    display: none;
+    position: absolute;
+    background-color: steelblue;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+    .contenidomenu a {
+        color: whitesmoke;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+        .contenidomenu a:hover {
+            background-color: cornflowerblue
+        }
+
+.menu:hover .menubtn {
+    background-color: #3e8e41;
+}
+
+.menu:hover .contenidomenu {
+    display: block;
+}
+/*
+    MENÚ "AYUDA"
+*/
+.ayuda {
+    position: relative;
+    display: inline-block;
+    height: 80px;
+    width: 160px;
+}
+
+.ayudabtn {
+    position: relative;
+    display: inline-block;
+    height: 80px;
+    width: 160px;
+    background-color:royalblue;
+    color: white;
+    padding: 15px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.contenidoayuda {
+    display: none;
+    position: absolute;
+    background-color: steelblue;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+    .contenidoayuda a {
+        color: whitesmoke;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+        .contenidoayuda a:hover {
+            background-color: cornflowerblue
+        }
+
+.ayuda:hover .ayudabtn {
+    background-color: #3e8e41;
+}
+
+.ayuda:hover .contenidoayuda {
+    display: block;
+}
+
+/*
+    MENU PARA LO QUE QUIERE EL USUARIO
+*/
+.opcion {
+    position: relative;
+    display: inline-block;
+    height: 80px;
+    width: 160px;
+}
+
+.opcionbtn {
+    position: relative;
+    display: inline-block;
+    height: 80px;
+    width: 160px;
+    background-color: royalblue;
+    color: white;
+    padding: 15px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.contenidoopcion {
+    display: none;
+    position: absolute;
+    background-color: steelblue;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+    .contenidoopcion a {
+        color: whitesmoke;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+        .contenidoopcion a:hover {
+            background-color: cornflowerblue
+        }
+
+.opcion:hover .opcionbtn {
+    background-color: #3e8e41;
+}
+
+.opcion:hover .contenidoopcion {
+    display: block;
+}

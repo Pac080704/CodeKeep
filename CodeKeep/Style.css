@@ -1,0 +1,153 @@
+﻿/*
+    ESTA PARTE ES SOLO PARA HOMEPAGE
+*/
+
+body {
+    background-color: silver;
+    overflow: hidden;
+}
+
+.margsup {
+    height: 80px;
+    width: 1580px;
+    background-color: steelblue;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+
+.marginf {
+    height: 40px;
+    width: 1580px;
+    background-color: steelblue;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+}
+
+.contmenu{
+    height:80px;
+    width:160px;
+    position:absolute;
+    top:0%;
+    left:20%;
+}
+
+.contayuda {
+    height: 80px;
+    width: 160px;
+    position: absolute;
+    top: 0%;
+    left: 30.15%;
+}
+
+.contopcion {
+    height: 80px;
+    width: 160px;
+    position: absolute;/*PARA EL DE USUARIO*/
+    top: 0%;
+    left: 20%;
+}
+
+.titu{
+    position:absolute;
+    top:27%;
+    left:9%;
+    font:30px serif;
+    color:aliceblue;
+}
+
+.exp {
+    height: 500px;
+    width: 400px;
+    background-color: whitesmoke;
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    transform: translate(-10%,-60%);
+    border-top: 8px solid steelblue;
+    border-right: 8px solid steelblue;
+    border-bottom: 8px solid steelblue;
+    border-left: 8px solid steelblue;
+}
+
+.img1 {
+    height: 50px;
+    width: 70px;
+    background-image: url("https://lh3.googleusercontent.com/xuG7CJXvWkjvnEXO4yQ8i2MYASjBZD6zCLwYGiBu7GGEGSQugVtgc_PWe-qAnXRZQbp_4TaXpB49yhKKXVV9QtU=w1280");
+    background-size: cover;
+    position: absolute;
+    top: 22%;
+    left: 5%;
+    transform: translate(-5%,-22%);
+}
+
+.img2 {
+    height: 500px;
+    width: 850px;
+    background-image: url("https://microblink.com/wp-content/uploads/2021/05/microblink-keeping-your-C-code-free-from-bugs-header.png");
+    background-size: contain;
+    position: absolute;
+    top: 60%;
+    left: 90%;
+    transform: translate(-90%,-60%);
+    border-top: 8px solid steelblue;
+    border-right: 8px solid steelblue;
+    border-bottom: 8px solid steelblue;
+    border-left: 8px solid steelblue;
+}
+/*
+    ESTA PARTE ES SOLO PARA INCICIO DE SESION
+   
+*/
+.form1 {
+    background-color: dimgray;
+    height: 500px;
+    width: 300px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-60%);
+    border-top: 8px solid steelblue;
+    border-right: 8px solid steelblue;
+    border-bottom: 8px solid steelblue;
+    border-left: 8px solid steelblue;
+}
+
+.adform1 {
+    height: 500px;
+    width: 300px;
+    font:25px serif;
+    text-align:center;
+}
+
+/*
+    ESTA PARTE ES PARA USUARIO
+*/
+
+.formus {
+    height: 586px;
+    width: 1536px;
+    position: absolute;
+    top: 67%;
+    left: 50%;
+    transform: translate(-50%,-67%);
+}
+
+
+.adformus {
+    background-color: dimgray;
+    height: 300px;
+    width: 500px;
+    font: 25px serif;
+    text-align: center;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    border-top: 8px solid steelblue;
+    border-right: 8px solid steelblue;
+    border-bottom: 8px solid steelblue;
+    border-left: 8px solid steelblue;
+}
+
