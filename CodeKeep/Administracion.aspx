@@ -38,10 +38,21 @@
     <!--FORM-->
     <form class="formad" id="form1" runat="server">
         <div class="adadmin">
-            Hola admin
+            <br />
+            &nbsp;<asp:Label ID="Label1" runat="server" ForeColor="White"></asp:Label>
+             <br />
+             <br />
+             <asp:Label ID="Label2" runat="server" ForeColor="White" Text="¿Qué deseas realizar?"></asp:Label>
+             <br />
+             <br />
+             <br />
+             <asp:Button ID="Button2" runat="server" ForeColor="SteelBlue" Height="50px" Text="Eliminación de información" Width="210px" BackColor="Silver" Font-Size="17px" BorderColor="SteelBlue" OnClick="Button2_Click" />
+             <asp:Button ID="Button3" runat="server" ForeColor="SteelBlue" Height="50px" Text="Inserción de infromación" Width="210px" BackColor="Silver" Font-Size="17px" BorderColor="SteelBlue" OnClick="Button3_Click" />
+             <br />
+             <br />
         </div>
         <div class="cerrar">
-            <asp:Button ID="Button1" runat="server" Text="Cerrar Sesión" BackColor="DimGray" ForeColor="White" Height="50px" Width="195px" />
+            <asp:Button ID="Button1" runat="server" Text="Cerrar Sesión" BackColor="DimGray" ForeColor="White" Height="50px" Width="195px" OnClick="Button1_Click" />
         </div>
     </form>
     <!--MARGEN INFERIOR-->

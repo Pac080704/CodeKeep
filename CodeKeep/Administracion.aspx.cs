@@ -16,6 +16,26 @@ namespace CodeKeep
             {
                 Response.Redirect("InicioSesion.aspx");
             }
+            else
+            {
+                Label1.Text="Bienvenid@ " + Session["nombre"].ToString();
+            }
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            Session.Abandon();
+            Response.Redirect("InicioSesion.aspx");
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void Button3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

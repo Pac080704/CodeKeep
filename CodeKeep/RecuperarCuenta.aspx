@@ -19,7 +19,7 @@
                 <button class="menubtn">MENÚ</button>
                 <div class="contenidomenu">
                     <a href="HomePage.html">Página de Inicio</a>
-                    <a href="IncioSesion.aspx">Inicio de sesión</a> <!--falta poner las referencias-->
+                    <a href="InicioSesion.aspx">Inicio de sesión</a> <!--falta poner las referencias-->
                 </div>
             </div>
         </div>
@@ -47,19 +47,25 @@
             <br />
 &nbsp;<asp:Label ID="Label2" runat="server" ForeColor="White" Text="Correo:"></asp:Label>
             <br />
-            <asp:TextBox ID="TextBox1" runat="server" BackColor="Silver" ForeColor="SteelBlue" Height="35px" Width="182px" Font-Size="17px"></asp:TextBox>
+            <asp:TextBox ID="TextBox1" runat="server" BackColor="Silver" ForeColor="SteelBlue" Height="35px" Width="195px" Font-Size="17px"></asp:TextBox>
             <br />
+            <br />
+            <asp:Button ID="Button1" runat="server" BackColor="Silver" ForeColor="SteelBlue" Height="41px" Text="Ingresar" Width="131px" Font-Size="17px" Font-Bold="true" OnClick="Button1_Click"/>
             <br />
             <asp:Label ID="Label3" runat="server" ForeColor="White" Text="Aquí va el hint"></asp:Label>
             <br />
-            <asp:TextBox ID="TextBox2" runat="server" BackColor="Silver" ForeColor="SteelBlue" Height="35px" Width="182px" Font-Size="17px"></asp:TextBox>
-            <br />
-            <br />
-            <asp:Button ID="Button1" runat="server" BackColor="Silver" ForeColor="SteelBlue" Height="41px" Text="Recuperar" Width="131px" Font-Size="17px" Font-Bold="true"/>
+            <asp:TextBox ID="TextBox2" runat="server" BackColor="Silver" ForeColor="SteelBlue" Height="35px" Width="182px" Font-Size="17px" TextMode="Password"></asp:TextBox>
+
             <br />
             <br />
             <br />
-            <asp:Label ID="Label4" runat="server" ForeColor="White" Text="MENSAJE DE ERROR"></asp:Label>
+            <asp:Button ID="Button2" runat="server" BackColor="Silver" ForeColor="SteelBlue" Height="41px" OnClick="Button2_Click" Text="Recuperar" Width="131px" />
+            <asp:Button ID="Button3" runat="server" BackColor="Silver" ForeColor="SteelBlue" Height="41px" OnClick="Button3_Click" Text="Nueva Contraseña" Width="150px" />
+            <br />
+            <br />
+            <br />
+
+            <asp:Label ID="Label4" runat="server" ForeColor="White"></asp:Label>
         </div>
     </form>
 

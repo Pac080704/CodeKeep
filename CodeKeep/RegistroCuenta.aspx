@@ -19,7 +19,7 @@
                 <button class="menubtn">MENÚ</button>
                 <div class="contenidomenu">
                     <a href="HomePage.html">Página de Inicio</a>
-                    <a href="IncioSesion.aspx">Inicio de sesión</a><!--falta poner las referencias-->
+                    <a href="InicioSesion.aspx">Inicio de sesión</a><!--falta poner las referencias-->
                 </div>
             </div>
         </div>
@@ -38,11 +38,15 @@
     </div>
 
     <!--FORM-->
-    <form class="form1" id="form1" runat="server">
-        <div class="adform1">
-            
-            <br />
-            <asp:Label ID="Label1" runat="server" ForeColor="White" Text="Registro de Cuenta"></asp:Label>
+    <form class="formreg" id="form1" runat="server">
+        <!--DIV TITULO-->
+        <div class="titulo">
+
+            <asp:Label ID="Label9" runat="server" ForeColor="White" Text="Nueva Cuenta"></asp:Label>
+
+        </div>
+        <!--DIV FORM DERECHO-->
+        <div class="adformreg">
             <br />
             <br />
 &nbsp;<asp:Label ID="Label2" runat="server" ForeColor="White" Text="Correo:"></asp:Label>
@@ -52,14 +56,41 @@
             <br />
             <asp:Label ID="Label3" runat="server" ForeColor="White" Text="Contraseña:"></asp:Label>
             <br />
-            <asp:TextBox ID="TextBox2" runat="server" BackColor="Silver" ForeColor="SteelBlue" Height="35px" Width="182px" Font-Size="17px"></asp:TextBox>
+            <asp:TextBox ID="TextBox2" runat="server" BackColor="Silver" ForeColor="SteelBlue" Height="35px" Width="182px" Font-Size="17px" TextMode="Password"></asp:TextBox>
             <br />
             <br />
-            <asp:Button ID="Button1" runat="server" BackColor="Silver" ForeColor="SteelBlue" Height="41px" Text="Crear Cuenta" Width="131px" Font-Size="17px" Font-Bold="true"/>
+            <asp:Label ID="Label4" runat="server" ForeColor="White" Text="Pregunta de Rescate:"></asp:Label>
+            <br />
+            
+            <asp:TextBox ID="TextBox3" runat="server" BackColor="Silver" ForeColor="SteelBlue" Height="35px" Width="182px" Font-Size="17px"></asp:TextBox>
             <br />
             <br />
+            <asp:Label ID="Label5" runat="server" ForeColor="White" Text="Respuesta de Rescate:"></asp:Label>
+            <asp:TextBox ID="TextBox4" runat="server" BackColor="Silver" ForeColor="SteelBlue" Height="35px" Width="182px" Font-Size="17px" TextMode="Password"></asp:TextBox>
+            
+        </div>
+        <!--DIV DE LA IZQUIERDA-->
+        <div class="adformregizq">
+            
             <br />
-            <asp:Label ID="Label4" runat="server" ForeColor="White" Text="MENSAJE DE ERROR"></asp:Label>
+            <br />
+            <asp:Label ID="Label6" runat="server" ForeColor="White" Text="Dirección:"></asp:Label>
+            <br />
+            <asp:TextBox ID="TextBox5" runat="server" BackColor="Silver" ForeColor="SteelBlue" Height="35px" Width="182px" Font-Size="17px"></asp:TextBox>
+            <br />
+            <br />
+            <asp:Label ID="Label7" runat="server" ForeColor="White" Text="Nombre:"></asp:Label>
+            <br />
+            <asp:TextBox ID="TextBox6" runat="server" BackColor="Silver" ForeColor="SteelBlue" Height="35px" Width="182px" Font-Size="17px"></asp:TextBox>
+            <br />
+            <br />
+            <asp:Label ID="Label8" runat="server" ForeColor="White" Text="Fecha de nacimiento:"></asp:Label> 
+            <br />
+            <asp:TextBox ID="TextBox7" runat="server" BackColor="Silver" ForeColor="SteelBlue" Height="35px" Width="182px" Font-Size="17px" TextMode="DateTime"></asp:TextBox>
+        </div>
+        <!--DIV BOTON-->
+        <div class="botoncarga">
+            <asp:Button ID="Button1" runat="server" BackColor="Silver" ForeColor="SteelBlue" Height="41px" Text="Crear Cuenta" Width="131px" />
         </div>
     </form>
 
