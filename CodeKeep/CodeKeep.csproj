@@ -86,7 +86,6 @@
     <Compile Include="Administracion.aspx.designer.cs">
       <DependentUpon>Administracion.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ConexionDB.cs" />
     <Compile Include="Consulta.aspx.cs">
       <DependentUpon>Consulta.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
