@@ -90,7 +90,7 @@
         </div>
         <!--DIV BOTON-->
         <div class="botoncarga">
-            <asp:Button ID="Button1" runat="server" BackColor="Silver" ForeColor="SteelBlue" Height="41px" Text="Crear Cuenta" Width="131px" />
+            <asp:Button ID="Button1" runat="server" BackColor="Silver" ForeColor="SteelBlue" Height="41px" Text="Crear Cuenta" Width="131px" OnClick="Button1_Click" />
         </div>
     </form>
 

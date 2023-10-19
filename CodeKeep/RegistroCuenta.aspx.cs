@@ -12,6 +12,11 @@ namespace CodeKeep
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
             String query = "insert into Cuenta values( ? , ? , ? , ? , ? , ? , ? , ? )";
             String queryClave = "select max(cUsuario) from Cuenta";
             int claveCuenta;
@@ -29,7 +34,7 @@ namespace CodeKeep
             {
                 claveCuenta = 1;
             }
-            comando=new OdbcCommand(query, conexion);
+            comando = new OdbcCommand(query, conexion);
             comando.Parameters.AddWithValue("cUsuario", claveCuenta);
             comando.Parameters.AddWithValue("correo", TextBox1.Text);
             comando.Parameters.AddWithValue("contraseña", TextBox2.Text);
@@ -43,7 +48,7 @@ namespace CodeKeep
                 comando.ExecuteNonQuery();
                 Response.Redirect("InicioSesion.aspx");
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
 
             }

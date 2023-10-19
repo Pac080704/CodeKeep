@@ -59,8 +59,8 @@
             <br />
             <br />
             <br />
-            <asp:Button ID="Button2" runat="server" BackColor="Silver" ForeColor="SteelBlue" Height="41px" OnClick="Button2_Click" Text="Recuperar" Width="131px" />
-            <asp:Button ID="Button3" runat="server" BackColor="Silver" ForeColor="SteelBlue" Height="41px" OnClick="Button3_Click" Text="Nueva Contraseña" Width="150px" />
+            <asp:Button ID="Button2" runat="server" BackColor="Silver" ForeColor="SteelBlue" Font-Size="17px" Font-Bold="true" Height="41px" OnClick="Button2_Click" Text="Recuperar" Width="131px" />
+            <asp:Button ID="Button3" runat="server" BackColor="Silver" ForeColor="SteelBlue" Font-Size="17px" Font-Bold="true" Height="41px" OnClick="Button3_Click" Text="Nueva Contraseña" Width="150px" />
             <br />
             <br />
             <br />

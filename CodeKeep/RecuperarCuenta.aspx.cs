@@ -76,8 +76,8 @@ namespace CodeKeep
             }
             else
             {
-                Session.Abandon();
-                Response.Redirect("InicioSesion.aspx");
+                Label4.Text = "La respuesta no coincide";
+                TextBox2.Text = "";
             }
         }
 
