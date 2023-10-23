@@ -23,13 +23,13 @@ namespace CodeKeep
             {
                 CheckBoxList1.Items.Add(new ListItem("Nombre", "Cuenta.nombre as Nombre"));
                 CheckBoxList1.Items.Add(new ListItem("Correo", "Cuenta.correo as Correo"));
-                CheckBoxList1.Items.Add(new ListItem("Contacto", "Contactos.nombre as Contacto"));
-                CheckBoxList1.Items.Add(new ListItem("Telefono", "Contactos.telefono as Telefono"));
-                CheckBoxList1.Items.Add(new ListItem("Ciudad", "Ciudad.nombreCiudad as Ciudad"));
-                CheckBoxList1.Items.Add(new ListItem("Documento", "Tipo.nombre as Documento"));
-                CheckBoxList1.Items.Add(new ListItem("Plataforma", "Plataforma.nombre as Plataforma"));
-                CheckBoxList1.Items.Add(new ListItem("Contraseña", "Contraseñas.passwrd as Contraseña"));
-                CheckBoxList1.Items.Add(new ListItem("Evento", "Eventos.fecha as Evento"));
+                CheckBoxList1.Items.Add(new ListItem("Contacto", "count(distinct Contactos.nombre) as Contacto"));
+                CheckBoxList1.Items.Add(new ListItem("Telefono", "count(distinct Contactos.telefono) as Telefono"));
+                CheckBoxList1.Items.Add(new ListItem("Ciudad", "count(distinct Ciudad.nombreCiudad) as Ciudad"));
+                CheckBoxList1.Items.Add(new ListItem("Documento", "count(distinct Tipo.nombre) as Documento"));
+                CheckBoxList1.Items.Add(new ListItem("Plataforma", "count(distinct Plataforma.nombre) as Plataforma"));
+                CheckBoxList1.Items.Add(new ListItem("Contraseña", "count(distinct Contraseñas.passwrd) as Contraseña"));
+                CheckBoxList1.Items.Add(new ListItem("Evento", "count(distinct Eventos.fecha) as Evento"));
             }
             //Cargar los items de las DropDownLists de los filtros
             if(DropDownList1.Items.Count == 0)
@@ -96,6 +96,7 @@ namespace CodeKeep
             String select = "SELECT ";
             String from = " FROM Cuenta inner join Contactos on Contactos.cUsuario = Cuenta.cUsuario inner join Ciudad on Ciudad.claveC = Cuenta.claveC inner join Documentos on Documentos.cUsuario = Cuenta.cUsuario inner join Tipo on Tipo.ClaveTipo = Documentos.ClaveTipo inner join Contraseñas on Contraseñas.cUsuario = Cuenta.cUsuario inner join Plataforma on Plataforma.claveP = Contraseñas.claveP inner join Eventos on Eventos.cUsuario = Cuenta.cUsuario";
             String where = " where 1=1 ";
+            String groupBy = "";
             String query = "";
 
             for(int i = 0; i < CheckBoxList1.Items.Count; i++)
@@ -126,7 +127,9 @@ namespace CodeKeep
                 where = where + " and Ciudad.claveC = ? ";
             }
 
-            query = select + from + where;
+            groupBy = " GROUP BY Cuenta.nombre, Cuenta.correo, Ciudad.nombreCiudad ";
+            
+            query = select + from + where + groupBy;
 
             Label1.Text = query;
 
@@ -163,7 +166,7 @@ namespace CodeKeep
             }
             catch(Exception ex)
             {
-                Label1.Text = "ERROR: " + ex.ToString();
+                Label2.Text = "ERROR: " + ex.ToString();
             }
             conexion.Close();
         }
