@@ -73,6 +73,7 @@
     <Content Include="InicioSesion.aspx" />
     <Content Include="RecuperarCuenta.aspx" />
     <Content Include="RegistroCuenta.aspx" />
+    <Content Include="Reportes.aspx" />
     <Content Include="Style.css" />
     <Content Include="stylemenu.css" />
     <Content Include="Usuario.aspx" />
@@ -86,6 +87,7 @@
     <Compile Include="Administracion.aspx.designer.cs">
       <DependentUpon>Administracion.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ConexionDB.cs" />
     <Compile Include="Consulta.aspx.cs">
       <DependentUpon>Consulta.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -114,6 +116,13 @@
     </Compile>
     <Compile Include="RegistroCuenta.aspx.designer.cs">
       <DependentUpon>RegistroCuenta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes.aspx.cs">
+      <DependentUpon>Reportes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reportes.aspx.designer.cs">
+      <DependentUpon>Reportes.aspx</DependentUpon>
     </Compile>
     <Compile Include="Usuario.aspx.cs">
       <DependentUpon>Usuario.aspx</DependentUpon>

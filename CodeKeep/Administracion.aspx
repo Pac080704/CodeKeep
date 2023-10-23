@@ -48,6 +48,7 @@
              <br />
              <asp:Button ID="Button2" runat="server" ForeColor="SteelBlue" Height="50px" Text="Eliminación de información" Width="210px" BackColor="Silver" Font-Size="17px" BorderColor="SteelBlue" OnClick="Button2_Click" />
              <asp:Button ID="Button3" runat="server" ForeColor="SteelBlue" Height="50px" Text="Inserción de infromación" Width="210px" BackColor="Silver" Font-Size="17px" BorderColor="SteelBlue" OnClick="Button3_Click" />
+             <asp:Button ID="Button4" runat="server" OnClick="Button4_Click" Text="Reportes" />
              <br />
              <br />
         </div>
