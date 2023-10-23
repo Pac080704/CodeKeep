@@ -26,10 +26,10 @@ namespace CodeKeep
                 CheckBoxList1.Items.Add(new ListItem("Contacto", "Contactos.nombre as Contacto"));
                 CheckBoxList1.Items.Add(new ListItem("Telefono", "Contactos.telefono as Telefono"));
                 CheckBoxList1.Items.Add(new ListItem("Ciudad", "Ciudad.nombreCiudad as Ciudad"));
-                CheckBoxList1.Items.Add(new ListItem("Documento", "Tipo.nombre as Tipo de Documento"));
+                CheckBoxList1.Items.Add(new ListItem("Documento", "Tipo.nombre as Documento"));
                 CheckBoxList1.Items.Add(new ListItem("Plataforma", "Plataforma.nombre as Plataforma"));
                 CheckBoxList1.Items.Add(new ListItem("Contraseña", "Contraseñas.passwrd as Contraseña"));
-                CheckBoxList1.Items.Add(new ListItem("Evento", "Eventos.fecha as Fecha Evento"));
+                CheckBoxList1.Items.Add(new ListItem("Evento", "Eventos.fecha as Evento"));
             }
             //Cargar los items de las DropDownLists de los filtros
             if(DropDownList1.Items.Count == 0)
@@ -128,24 +128,31 @@ namespace CodeKeep
 
             query = select + from + where;
 
+            Label1.Text = query;
+
             OdbcConnection conexion = new ConexionBD().con;
             OdbcCommand comando = new OdbcCommand(query, conexion);
 
+            int parameterIndex = 1;
+
             if(DropDownList1.SelectedValue != "-1")
             {
-                comando.Parameters.AddWithValue("cUsuario", DropDownList1.SelectedValue);
+                comando.Parameters.AddWithValue("p" + parameterIndex, DropDownList1.SelectedValue);
+                parameterIndex++;
             }
             if(DropDownList2.SelectedValue != "-1")
             {
-                comando.Parameters.AddWithValue("claveP", DropDownList2.SelectedValue);
+                comando.Parameters.AddWithValue("p" + parameterIndex, DropDownList2.SelectedValue);
+                parameterIndex++;
             }
             if(DropDownList3.SelectedValue != "-1")
             {
-                comando.Parameters.AddWithValue("ClaveTipo", DropDownList3.SelectedValue);
+                comando.Parameters.AddWithValue("p" + parameterIndex, DropDownList3.SelectedValue);
+                parameterIndex++;
             }
             if(DropDownList4.SelectedValue != "-1")
             {
-                comando.Parameters.AddWithValue("claveC", DropDownList4.SelectedValue);
+                comando.Parameters.AddWithValue("p" + parameterIndex, DropDownList4.SelectedValue);
             }
 
             try
