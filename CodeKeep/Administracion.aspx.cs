@@ -36,7 +36,7 @@ namespace CodeKeep
 
         protected void Button3_Click(object sender, EventArgs e)
         {
-            Response.Redirect("InsertarInfo.aspx");
+            Response.Redirect("InsertarInfoAdmi.aspx");
         }
 
         protected void Button4_Click(object sender, EventArgs e)
